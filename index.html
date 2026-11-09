@@ -138,7 +138,7 @@ const TOWNS = {
  "Peace River":[56.23,-117.29],"Fairview":[56.07,-118.39],"Grande Prairie":[55.17,-118.79],
  "Clairmont":[55.26,-118.79],"Fort St. John":[56.25,-120.85],"Edmonton":[53.55,-113.49],"Calgary":[51.05,-114.07]
 };
-const LABEL_OFF = {"Clairmont":[8,-6],"Grande Prairie":[8,12],"Buffalo Head Prairie":[-10,14,"end"],"La Crete":[10,-4],"Deadwood":[10,12],"Peace River":[10,14],"Paddle Prairie":[-10,-6,"end"],"Keg River":[-10,4,"end"],"Manning":[-12,4,"end"],"Fairview":[-10,4,"end"],"Fort St. John":[8,-8]};
+const LABEL_OFF = {"Clairmont":[8,-6],"Grande Prairie":[8,12],"Buffalo Head Prairie":[0,20,"middle"],"La Crete":[10,-4],"Deadwood":[10,12],"Peace River":[10,14],"Paddle Prairie":[-10,-6,"end"],"Keg River":[-10,4,"end"],"Manning":[-12,4,"end"],"Fairview":[-10,4,"end"],"Fort St. John":[8,-8]};
 const MONTHS = [...new Set(DEALS.map(d=>d.m))].sort();
 const mLabel = m => { const [y,mo]=m.split('-'); return ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'][+mo-1]+" '"+y.slice(2); };
 const money = v => (v<0?'-':'')+'$'+Math.abs(Math.round(v)).toLocaleString('en-CA');
